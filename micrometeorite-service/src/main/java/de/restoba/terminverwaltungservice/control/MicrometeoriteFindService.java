@@ -8,8 +8,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 
 @Service
@@ -22,13 +24,9 @@ public class MicrometeoriteFindService {
         return mapper.entitiesToModels(new ArrayList<>(repo.findAll()));
     }
 
-    public void addMicrometeoriteFind(MultipartFile upfile, String micrometeoriteFind) {
+    public void addMicrometeoriteFind(MicrometeoriteFind body) {
         MicrometeoriteFindEntity entity = new MicrometeoriteFindEntity();
-        try {
-            entity.setMicrometeoritePhoto(upfile.getBytes());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        entity.setMicrometeoritePhoto(body.getPicture().getBytes(StandardCharsets.UTF_8));
         entity.setDatetime(LocalDateTime.now());
         repo.save(entity);
     }

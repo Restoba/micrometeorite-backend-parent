@@ -18,6 +18,7 @@ public class MicrometeoriteFindMapper {
     public MicrometeoriteFind entityToModel(MicrometeoriteFindEntity entity) {
         MicrometeoriteFind model = new MicrometeoriteFind();
         model.setMicrometeoriteFindId(BigDecimal.valueOf(entity.getId()));
+        model.setPicture(entity.getMicrometeoritePhoto().toString());
         return model;
     }
 

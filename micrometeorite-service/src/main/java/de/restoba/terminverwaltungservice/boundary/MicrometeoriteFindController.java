@@ -40,10 +40,10 @@ public class MicrometeoriteFindController implements MicrometeoriteFindApi {
     }
 
     @Override
-    public ResponseEntity<PredictionResult> addMicrometeoriteFind(MultipartFile upfile, String micrometeoriteFind) {
+    public ResponseEntity<PredictionResult> addMicrometeoriteFind(MicrometeoriteFind body) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        service.addMicrometeoriteFind(upfile,micrometeoriteFind);
+        service.addMicrometeoriteFind(body);
         return new ResponseEntity<>(headers, HttpStatus.CREATED);
     }
 

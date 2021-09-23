@@ -26,7 +26,7 @@ public class MicrometeoriteFindService {
 
     public void addMicrometeoriteFind(MicrometeoriteFind body) {
         MicrometeoriteFindEntity entity = new MicrometeoriteFindEntity();
-        entity.setMicrometeoritePhoto(body.getPicture().getBytes(StandardCharsets.UTF_8));
+        entity.setMicrometeoritePhoto(Base64.getDecoder().decode(body.getPicture()));
         entity.setDatetime(LocalDateTime.now());
         repo.save(entity);
     }

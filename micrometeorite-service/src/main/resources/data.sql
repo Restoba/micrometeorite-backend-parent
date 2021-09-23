@@ -1,4 +1,4 @@
-INSERT INTO IMPFKAPAZITAET (IMPFSTOFF_ANZAHL, IMPFSTOFF_NAME) VALUES
+/*INSERT INTO IMPFKAPAZITAET (IMPFSTOFF_ANZAHL, IMPFSTOFF_NAME) VALUES
 ('10', 'BioNTech,Pfizer'),
 ('10', 'Johnson & Johnson'),
 ('10', 'Moderna'),
@@ -9,3 +9,4 @@ INSERT INTO USERS (USER_NAME, USER_PASSWORT, USER_ROLLE) VALUES
                                                           ('Meyer', '123', 'Krankenpfleger*in'),
                                                           ('Dr. Joseph', '123', 'Doctor*in'),
                                                           ('Dr. Schönwetter', '123', 'Doctor*in');
+*/

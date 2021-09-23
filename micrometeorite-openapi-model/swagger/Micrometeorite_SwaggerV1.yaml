@@ -1,0 +1,74 @@
+swagger: "2.0"
+info:
+  description: ""
+  version: "1.0.0"
+  title: "Micrometeorite evaluation system"
+  contact:
+    email: "maximiliangruber91@gmail.com"
+  license:
+    name: "Apache 2.0"
+    url: "https://www.apache.org/licenses/LICENSE-2.0.html"
+host: "localhost:8080"
+basePath: "/micrometeorite/api/v1"
+schemes:
+  - "https"
+  - "http"
+paths:
+  /micrometeoriteFind:
+    post:
+      tags:
+        - "micrometeoriteFind"
+      summary: "Add micrometeorite find"
+      description: "Add micrometeorite find"
+      operationId: "addMicrometeoriteFind"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          description: "MicrometeoriteFind object that needs to be added"
+          required: true
+          schema:
+            $ref: "#/definitions/micrometeoriteFind"
+      responses:
+        "201":
+          description: "Micrometeorite Finding created"
+          schema:
+            $ref: '#/definitions/predictionResult'
+        "405":
+          description: "Invalid input"
+    get:
+      tags:
+        - "micrometeoriteFind"
+      summary: "Returns all micrometeorite Findings"
+      operationId: "getAllMicrometeoriteFinds"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Return all Micrometeorite Findings"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/micrometeoriteFind"
+
+definitions:
+  micrometeoriteFind:
+    type: "object"
+    properties:
+      micrometeoriteFindId:
+        type: "number"
+        format: "int"
+      picture: # <-- image embedded into JSON
+        type: "string"
+        format: "byte"
+        description: "Base64-encoded contents of the avatar image"
+
+  predictionResult:
+    type: "object"
+    properties:
+      micrometeoriteFindId:
+        type: "number"
+        format: "int"

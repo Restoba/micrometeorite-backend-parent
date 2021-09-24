@@ -1,0 +1,244 @@
+2021-09-24 17:44:21.629  INFO 38724 --- [main] d.r.t.MicrometeoriteServiceApplication   : Starting MicrometeoriteServiceApplication on 9N104146 with PID 38724 (Z:\Workspace\micrometeorite-backend-parent\micrometeorite-service\target\classes started by B066467 in Z:\Workspace\micrometeorite-backend-parent)
+2021-09-24 17:44:21.637  INFO 38724 --- [main] d.r.t.MicrometeoriteServiceApplication   : The following profiles are active: development
+2021-09-24 17:44:25.745  INFO 38724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-24 17:44:25.935  INFO 38724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 170ms. Found 3 JPA repository interfaces.
+2021-09-24 17:44:27.485  INFO 38724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 17:44:27.517  INFO 38724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 17:44:27.519  INFO 38724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-09-24 17:44:27.825  INFO 38724 --- [main] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring embedded WebApplicationContext
+2021-09-24 17:44:27.826  INFO 38724 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6088 ms
+2021-09-24 17:44:28.049  INFO 38724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-24 17:44:28.466  INFO 38724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-24 17:44:28.484  INFO 38724 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:micrometeoritedb'
+2021-09-24 17:44:28.595  INFO 38724 --- [main] d.r.t.b.corsconfig.SimpleCORSFilter      : SimpleCORSFilter init
+2021-09-24 17:44:28.993  INFO 38724 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-24 17:44:29.147  INFO 38724 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2021-09-24 17:44:29.523  INFO 38724 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-09-24 17:44:29.841  INFO 38724 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-09-24 17:44:31.601  INFO 38724 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-24 17:44:31.621  INFO 38724 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-24 17:44:32.605  WARN 38724 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-24 17:44:32.970  INFO 38724 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-09-24 17:44:33.312  INFO 38724 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-24 17:44:33.802  INFO 38724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/micrometeorite/api/v1'
+2021-09-24 17:44:34.262  INFO 38724 --- [main] d.r.t.MicrometeoriteServiceApplication   : Started MicrometeoriteServiceApplication in 13.892 seconds (JVM running for 16.593)
+2021-09-24 17:44:35.759  INFO 38724 --- [RMI TCP Connection(5)-10.0.163.212] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 17:44:35.761  INFO 38724 --- [RMI TCP Connection(5)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 17:44:35.781  INFO 38724 --- [RMI TCP Connection(5)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2021-09-24 17:54:04.470  INFO 38724 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-24 17:54:04.473  INFO 38724 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-24 17:54:04.477  INFO 38724 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-24 17:54:04.481  INFO 38724 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-24 17:54:13.704  INFO 39076 --- [main] d.r.t.MicrometeoriteServiceApplication   : Starting MicrometeoriteServiceApplication on 9N104146 with PID 39076 (Z:\Workspace\micrometeorite-backend-parent\micrometeorite-service\target\classes started by B066467 in Z:\Workspace\micrometeorite-backend-parent)
+2021-09-24 17:54:13.707  INFO 39076 --- [main] d.r.t.MicrometeoriteServiceApplication   : The following profiles are active: development
+2021-09-24 17:54:15.407  INFO 39076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-24 17:54:15.535  INFO 39076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115ms. Found 3 JPA repository interfaces.
+2021-09-24 17:54:16.430  INFO 39076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 17:54:16.449  INFO 39076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 17:54:16.450  INFO 39076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-09-24 17:54:16.641  INFO 39076 --- [main] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring embedded WebApplicationContext
+2021-09-24 17:54:16.642  INFO 39076 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2882 ms
+2021-09-24 17:54:16.774  INFO 39076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-24 17:54:16.982  INFO 39076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-24 17:54:16.989  INFO 39076 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:micrometeoritedb'
+2021-09-24 17:54:17.028  INFO 39076 --- [main] d.r.t.b.corsconfig.SimpleCORSFilter      : SimpleCORSFilter init
+2021-09-24 17:54:17.207  INFO 39076 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-24 17:54:17.280  INFO 39076 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2021-09-24 17:54:17.472  INFO 39076 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-09-24 17:54:17.643  INFO 39076 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-09-24 17:54:18.735  INFO 39076 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-24 17:54:18.746  INFO 39076 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-24 17:54:19.353  WARN 39076 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-24 17:54:19.580  INFO 39076 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-09-24 17:54:19.801  INFO 39076 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-24 17:54:20.117  INFO 39076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/micrometeorite/api/v1'
+2021-09-24 17:54:20.393  INFO 39076 --- [main] d.r.t.MicrometeoriteServiceApplication   : Started MicrometeoriteServiceApplication in 7.365 seconds (JVM running for 9.009)
+2021-09-24 17:54:21.075  INFO 39076 --- [RMI TCP Connection(2)-10.0.163.212] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 17:54:21.077  INFO 39076 --- [RMI TCP Connection(2)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 17:54:21.090  INFO 39076 --- [RMI TCP Connection(2)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2021-09-24 17:59:11.942  INFO 39076 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-24 17:59:11.948  INFO 39076 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-24 17:59:11.954  INFO 39076 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-24 17:59:11.958  INFO 39076 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-24 17:59:18.778  INFO 36940 --- [main] d.r.t.MicrometeoriteServiceApplication   : Starting MicrometeoriteServiceApplication on 9N104146 with PID 36940 (Z:\Workspace\micrometeorite-backend-parent\micrometeorite-service\target\classes started by B066467 in Z:\Workspace\micrometeorite-backend-parent)
+2021-09-24 17:59:18.781  INFO 36940 --- [main] d.r.t.MicrometeoriteServiceApplication   : The following profiles are active: development
+2021-09-24 17:59:20.548  INFO 36940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-24 17:59:20.679  INFO 36940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119ms. Found 3 JPA repository interfaces.
+2021-09-24 17:59:21.636  INFO 36940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 17:59:21.656  INFO 36940 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 17:59:21.656  INFO 36940 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-09-24 17:59:21.844  INFO 36940 --- [main] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring embedded WebApplicationContext
+2021-09-24 17:59:21.845  INFO 36940 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2996 ms
+2021-09-24 17:59:21.976  INFO 36940 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-24 17:59:22.248  INFO 36940 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-24 17:59:22.258  INFO 36940 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:micrometeoritedb'
+2021-09-24 17:59:22.308  INFO 36940 --- [main] d.r.t.b.corsconfig.SimpleCORSFilter      : SimpleCORSFilter init
+2021-09-24 17:59:22.516  INFO 36940 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-24 17:59:22.598  INFO 36940 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2021-09-24 17:59:22.793  INFO 36940 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-09-24 17:59:22.972  INFO 36940 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-09-24 17:59:24.130  INFO 36940 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-24 17:59:24.140  INFO 36940 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-24 17:59:24.802  WARN 36940 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-24 17:59:25.058  INFO 36940 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-09-24 17:59:25.375  INFO 36940 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-24 17:59:25.847  INFO 36940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/micrometeorite/api/v1'
+2021-09-24 17:59:26.235  INFO 36940 --- [main] d.r.t.MicrometeoriteServiceApplication   : Started MicrometeoriteServiceApplication in 8.137 seconds (JVM running for 9.776)
+2021-09-24 17:59:26.973  INFO 36940 --- [RMI TCP Connection(4)-10.0.163.212] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 17:59:26.974  INFO 36940 --- [RMI TCP Connection(4)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 17:59:26.992  INFO 36940 --- [RMI TCP Connection(4)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2021-09-24 18:02:10.916  INFO 36940 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-24 18:02:10.920  INFO 36940 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-24 18:02:10.924  INFO 36940 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-24 18:02:10.929  INFO 36940 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-24 18:02:17.402  INFO 8380 --- [main] d.r.t.MicrometeoriteServiceApplication   : Starting MicrometeoriteServiceApplication on 9N104146 with PID 8380 (Z:\Workspace\micrometeorite-backend-parent\micrometeorite-service\target\classes started by B066467 in Z:\Workspace\micrometeorite-backend-parent)
+2021-09-24 18:02:17.407  INFO 8380 --- [main] d.r.t.MicrometeoriteServiceApplication   : The following profiles are active: development
+2021-09-24 18:02:19.154  INFO 8380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-24 18:02:19.283  INFO 8380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117ms. Found 3 JPA repository interfaces.
+2021-09-24 18:02:20.169  INFO 8380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 18:02:20.189  INFO 8380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 18:02:20.190  INFO 8380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-09-24 18:02:20.386  INFO 8380 --- [main] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring embedded WebApplicationContext
+2021-09-24 18:02:20.387  INFO 8380 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2925 ms
+2021-09-24 18:02:20.520  INFO 8380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-24 18:02:20.730  INFO 8380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-24 18:02:20.737  INFO 8380 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:micrometeoritedb'
+2021-09-24 18:02:20.777  INFO 8380 --- [main] d.r.t.b.corsconfig.SimpleCORSFilter      : SimpleCORSFilter init
+2021-09-24 18:02:20.958  INFO 8380 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-24 18:02:21.033  INFO 8380 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2021-09-24 18:02:21.223  INFO 8380 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-09-24 18:02:21.401  INFO 8380 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-09-24 18:02:22.739  INFO 8380 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-24 18:02:22.750  INFO 8380 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-24 18:02:23.438  WARN 8380 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-24 18:02:23.695  INFO 8380 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-09-24 18:02:23.917  INFO 8380 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-24 18:02:24.297  INFO 8380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/micrometeorite/api/v1'
+2021-09-24 18:02:24.581  INFO 8380 --- [main] d.r.t.MicrometeoriteServiceApplication   : Started MicrometeoriteServiceApplication in 7.911 seconds (JVM running for 9.414)
+2021-09-24 18:02:26.058  INFO 8380 --- [RMI TCP Connection(5)-10.0.163.212] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 18:02:26.060  INFO 8380 --- [RMI TCP Connection(5)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 18:02:26.082  INFO 8380 --- [RMI TCP Connection(5)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2021-09-24 18:08:11.728  INFO 8380 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-24 18:08:11.733  INFO 8380 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-24 18:08:11.737  INFO 8380 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-24 18:08:11.742  INFO 8380 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-24 18:08:17.898  INFO 35280 --- [main] d.r.t.MicrometeoriteServiceApplication   : Starting MicrometeoriteServiceApplication on 9N104146 with PID 35280 (Z:\Workspace\micrometeorite-backend-parent\micrometeorite-service\target\classes started by B066467 in Z:\Workspace\micrometeorite-backend-parent)
+2021-09-24 18:08:17.902  INFO 35280 --- [main] d.r.t.MicrometeoriteServiceApplication   : The following profiles are active: development
+2021-09-24 18:08:19.593  INFO 35280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-24 18:08:19.723  INFO 35280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116ms. Found 3 JPA repository interfaces.
+2021-09-24 18:08:20.618  INFO 35280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 18:08:20.637  INFO 35280 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 18:08:20.638  INFO 35280 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-09-24 18:08:20.829  INFO 35280 --- [main] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring embedded WebApplicationContext
+2021-09-24 18:08:20.830  INFO 35280 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2876 ms
+2021-09-24 18:08:20.964  INFO 35280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-24 18:08:21.176  INFO 35280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-24 18:08:21.183  INFO 35280 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:micrometeoritedb'
+2021-09-24 18:08:21.221  INFO 35280 --- [main] d.r.t.b.corsconfig.SimpleCORSFilter      : SimpleCORSFilter init
+2021-09-24 18:08:21.398  INFO 35280 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-24 18:08:21.471  INFO 35280 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2021-09-24 18:08:21.653  INFO 35280 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-09-24 18:08:21.818  INFO 35280 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-09-24 18:08:22.896  INFO 35280 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-24 18:08:22.908  INFO 35280 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-24 18:08:23.524  WARN 35280 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-24 18:08:23.746  INFO 35280 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-09-24 18:08:23.967  INFO 35280 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-24 18:08:24.287  INFO 35280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/micrometeorite/api/v1'
+2021-09-24 18:08:24.560  INFO 35280 --- [main] d.r.t.MicrometeoriteServiceApplication   : Started MicrometeoriteServiceApplication in 7.34 seconds (JVM running for 8.759)
+2021-09-24 18:08:25.006  INFO 35280 --- [RMI TCP Connection(1)-10.0.163.212] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 18:08:25.007  INFO 35280 --- [RMI TCP Connection(1)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 18:08:25.021  INFO 35280 --- [RMI TCP Connection(1)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2021-09-24 18:16:24.353  INFO 35280 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-24 18:16:24.364  INFO 35280 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-24 18:16:24.371  INFO 35280 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-24 18:16:24.379  INFO 35280 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-24 18:16:40.928  INFO 31424 --- [main] d.r.t.MicrometeoriteServiceApplication   : Starting MicrometeoriteServiceApplication on 9N104146 with PID 31424 (Z:\Workspace\micrometeorite-backend-parent\micrometeorite-service\target\classes started by B066467 in Z:\Workspace\micrometeorite-backend-parent)
+2021-09-24 18:16:40.933  INFO 31424 --- [main] d.r.t.MicrometeoriteServiceApplication   : The following profiles are active: development
+2021-09-24 18:16:43.033  INFO 31424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-24 18:16:43.176  INFO 31424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131ms. Found 3 JPA repository interfaces.
+2021-09-24 18:16:44.245  INFO 31424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 18:16:44.269  INFO 31424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 18:16:44.269  INFO 31424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-09-24 18:16:44.511  INFO 31424 --- [main] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring embedded WebApplicationContext
+2021-09-24 18:16:44.511  INFO 31424 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3497 ms
+2021-09-24 18:16:44.666  INFO 31424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-24 18:16:44.898  INFO 31424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-24 18:16:44.906  INFO 31424 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:micrometeoritedb'
+2021-09-24 18:16:44.949  INFO 31424 --- [main] d.r.t.b.corsconfig.SimpleCORSFilter      : SimpleCORSFilter init
+2021-09-24 18:16:45.149  INFO 31424 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-24 18:16:45.231  INFO 31424 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2021-09-24 18:16:45.434  INFO 31424 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-09-24 18:16:45.619  INFO 31424 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-09-24 18:16:46.815  INFO 31424 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-24 18:16:46.828  INFO 31424 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-24 18:16:47.514  WARN 31424 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-24 18:16:47.773  INFO 31424 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-09-24 18:16:48.023  INFO 31424 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-24 18:16:48.377  INFO 31424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/micrometeorite/api/v1'
+2021-09-24 18:16:48.692  INFO 31424 --- [main] d.r.t.MicrometeoriteServiceApplication   : Started MicrometeoriteServiceApplication in 8.805 seconds (JVM running for 10.78)
+2021-09-24 18:16:49.703  INFO 31424 --- [RMI TCP Connection(2)-10.0.163.212] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 18:16:49.704  INFO 31424 --- [RMI TCP Connection(2)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 18:16:49.718  INFO 31424 --- [RMI TCP Connection(2)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2021-09-24 18:19:46.603  INFO 31424 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-24 18:19:46.606  INFO 31424 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-24 18:19:46.610  INFO 31424 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-24 18:19:46.614  INFO 31424 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-24 18:19:52.630  INFO 39960 --- [main] d.r.t.MicrometeoriteServiceApplication   : Starting MicrometeoriteServiceApplication on 9N104146 with PID 39960 (Z:\Workspace\micrometeorite-backend-parent\micrometeorite-service\target\classes started by B066467 in Z:\Workspace\micrometeorite-backend-parent)
+2021-09-24 18:19:52.633  INFO 39960 --- [main] d.r.t.MicrometeoriteServiceApplication   : The following profiles are active: development
+2021-09-24 18:19:54.304  INFO 39960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-24 18:19:54.430  INFO 39960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114ms. Found 3 JPA repository interfaces.
+2021-09-24 18:19:55.394  INFO 39960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 18:19:55.411  INFO 39960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 18:19:55.412  INFO 39960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-09-24 18:19:55.626  INFO 39960 --- [main] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring embedded WebApplicationContext
+2021-09-24 18:19:55.627  INFO 39960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2941 ms
+2021-09-24 18:19:55.764  INFO 39960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-24 18:19:55.999  INFO 39960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-24 18:19:56.008  INFO 39960 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:micrometeoritedb'
+2021-09-24 18:19:56.052  INFO 39960 --- [main] d.r.t.b.corsconfig.SimpleCORSFilter      : SimpleCORSFilter init
+2021-09-24 18:19:56.248  INFO 39960 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-24 18:19:56.328  INFO 39960 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2021-09-24 18:19:56.535  INFO 39960 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-09-24 18:19:56.721  INFO 39960 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-09-24 18:19:57.947  INFO 39960 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-24 18:19:57.960  INFO 39960 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-24 18:19:58.690  WARN 39960 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-24 18:19:58.954  INFO 39960 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-09-24 18:19:59.203  INFO 39960 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-24 18:19:59.562  INFO 39960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/micrometeorite/api/v1'
+2021-09-24 18:19:59.878  INFO 39960 --- [main] d.r.t.MicrometeoriteServiceApplication   : Started MicrometeoriteServiceApplication in 7.893 seconds (JVM running for 9.302)
+2021-09-24 18:20:01.133  INFO 39960 --- [RMI TCP Connection(3)-10.0.163.212] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 18:20:01.135  INFO 39960 --- [RMI TCP Connection(3)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 18:20:01.148  INFO 39960 --- [RMI TCP Connection(3)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2021-09-24 18:26:56.817  INFO 39960 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-24 18:26:56.822  INFO 39960 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-24 18:26:56.825  INFO 39960 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-24 18:26:56.831  INFO 39960 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-24 18:27:07.756  INFO 36700 --- [main] d.r.t.MicrometeoriteServiceApplication   : Starting MicrometeoriteServiceApplication on 9N104146 with PID 36700 (Z:\Workspace\micrometeorite-backend-parent\micrometeorite-service\target\classes started by B066467 in Z:\Workspace\micrometeorite-backend-parent)
+2021-09-24 18:27:07.764  INFO 36700 --- [main] d.r.t.MicrometeoriteServiceApplication   : The following profiles are active: development
+2021-09-24 18:27:10.651  INFO 36700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-24 18:27:10.835  INFO 36700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 168ms. Found 3 JPA repository interfaces.
+2021-09-24 18:27:11.973  INFO 36700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-24 18:27:11.993  INFO 36700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-24 18:27:11.994  INFO 36700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-09-24 18:27:12.209  INFO 36700 --- [main] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring embedded WebApplicationContext
+2021-09-24 18:27:12.210  INFO 36700 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4338 ms
+2021-09-24 18:27:12.362  INFO 36700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-24 18:27:12.608  INFO 36700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-24 18:27:12.616  INFO 36700 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:micrometeoritedb'
+2021-09-24 18:27:12.659  INFO 36700 --- [main] d.r.t.b.corsconfig.SimpleCORSFilter      : SimpleCORSFilter init
+2021-09-24 18:27:12.885  INFO 36700 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-24 18:27:12.989  INFO 36700 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2021-09-24 18:27:13.262  INFO 36700 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-09-24 18:27:13.473  INFO 36700 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-09-24 18:27:14.774  INFO 36700 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-24 18:27:14.787  INFO 36700 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-24 18:27:15.521  WARN 36700 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-24 18:27:15.791  INFO 36700 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-09-24 18:27:16.056  INFO 36700 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-24 18:27:16.485  INFO 36700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/micrometeorite/api/v1'
+2021-09-24 18:27:16.827  INFO 36700 --- [main] d.r.t.MicrometeoriteServiceApplication   : Started MicrometeoriteServiceApplication in 10.498 seconds (JVM running for 13.255)
+2021-09-24 18:27:18.180  INFO 36700 --- [RMI TCP Connection(2)-10.0.163.212] o.a.c.c.C.[.[.[/micrometeorite/api/v1]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-24 18:27:18.182  INFO 36700 --- [RMI TCP Connection(2)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-24 18:27:18.198  INFO 36700 --- [RMI TCP Connection(2)-10.0.163.212] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms

@@ -34,9 +34,11 @@ paths:
             $ref: "#/definitions/micrometeoriteFind"
       responses:
         "201":
-          description: "Micrometeorite Finding created"
+          description: "Micrometeorite Finding created and predicted"
           schema:
-            $ref: '#/definitions/predictionResult'
+            type: array
+            items:
+              $ref: '#/definitions/predictionResult'
         "405":
           description: "Invalid input"
     get:
@@ -61,14 +63,94 @@ definitions:
       micrometeoriteFindId:
         type: "number"
         format: "int"
+      micrometeoriteFindDate:
+        type: "string"
+        format: "date-time"
+      micrometeoriteFindPlace:
+        type: "string"
+      micrometeoriteFindPlaceDescription:
+        type: "string"
+      micrometeoriteFindCoordinates:
+        type: "number"
+        format: "double"
+      micrometeoriteDiameter:
+        type: "number"
+        format: "double"
+      micrometeoriteForm:
+        type: "string"
+      micrometeoriteWeight:
+        type: "number"
+        format: "double"
+      micrometeoriteChemicalComposition:
+        type: "string"
+      micrometeoriteFindComment:
+        type: "string"
+      micrometeoriteFindFinder:
+          $ref: "#/definitions/person"
+      micrometeoriteFindRecorder:
+          $ref: "#/definitions/person"
+      images: # <-- image embedded into JSON
+        type: "array"
+        items:
+          $ref: "#/definitions/image"
+
+  image:
+    type: "object"
+    properties:
+      imageId:
+        type: "number"
+        format: "int"
+      photographyDate:
+        type: "string"
+        format: "date-time"
+      photographer:
+          $ref: "#/definitions/person"
+      recordingInstrument:
+        type: "string"
+      magnification:
+        type: "string"
+      camera:
+        type: "string"
+      lens:
+        type: "string"
       picture: # <-- image embedded into JSON
         type: "string"
         format: "byte"
         description: "Base64-encoded contents of the avatar image"
 
+  person:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+      firstname:
+        type: "string"
+      email:
+        type: "string"
+      website:
+        type: "string"
+      birthday:
+        type: "string"
+        format: "date"
+      street:
+        type: "string"
+      zipcode:
+        type: integer
+      location:
+        type: "string"
+      country:
+        type: "string"
+      phonenumber:
+        type: "string"
+
   predictionResult:
     type: "object"
     properties:
       micrometeoriteFindId:
+        type: "number"
+        format: "int"
+      micrometeoritePredictionModelName:
+        type: "string"
+      micrometeoritePrediction:
         type: "number"
         format: "int"

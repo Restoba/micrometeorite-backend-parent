@@ -14,7 +14,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
@@ -40,15 +39,16 @@ public class MicrometeoriteFindController implements MicrometeoriteFindApi {
     }
 
     @Override
-    public ResponseEntity<PredictionResult> addMicrometeoriteFind(MicrometeoriteFind body) {
+    public ResponseEntity<List<PredictionResult>> addMicrometeoriteFind(MicrometeoriteFind body) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        service.addMicrometeoriteFind(body);
-        return new ResponseEntity<>(headers, HttpStatus.CREATED);
+        return new ResponseEntity<>(service.addMicrometeoriteFind(body), headers, HttpStatus.CREATED);
     }
 
     @Override
     public ResponseEntity<List<MicrometeoriteFind>> getAllMicrometeoriteFinds() {
-        return null;
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        return new ResponseEntity<>(service.getAllMicrometeoriteFinds(), headers, HttpStatus.OK);
     }
 }

@@ -9,7 +9,7 @@
     </parent>
     <artifactId>micrometeorite-openapi-model</artifactId>
     <properties>
-        <java.version>11</java.version>
+        <java.version>1.8</java.version>
         <sonar.projectVersion>1.0</sonar.projectVersion>
     </properties>
     <dependencies>

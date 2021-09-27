@@ -5,7 +5,6 @@
 *.jar
 *.sw?
 *~
-.#*
 .*.md.html
 .DS_Store
 .attach_pid*

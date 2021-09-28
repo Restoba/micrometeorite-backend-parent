@@ -1,4 +1,4 @@
-package de.restoba.terminverwaltungmodel;
+package de.restoba.micrometeoritemodel;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

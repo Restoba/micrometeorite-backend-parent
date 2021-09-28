@@ -1,9 +1,10 @@
-package de.restoba.terminverwaltungservice;
+package de.restoba.micrometeoritemodel;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-class TerminverwaltungServiceApplicationTests {
+@SpringBootTest
+class MicrometeoriteOpenapiModelApplicationTests {
 
     @Test
     void contextLoads() {

@@ -81,7 +81,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>de.restoba.terminverwaltungservice.MicrometeoriteServiceApplication</mainClass>
+                    <mainClass>de.restoba.micrometeoriteservice.MicrometeoriteServiceApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

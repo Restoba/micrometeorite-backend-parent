@@ -1,4 +1,4 @@
-package de.restoba.terminverwaltungservice.boundary.exceptionhandler;
+package de.restoba.micrometeoriteservice.boundary.exceptionhandler;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

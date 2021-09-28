@@ -9,9 +9,11 @@ import de.restoba.terminverwaltungservice.entity.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -71,10 +73,33 @@ public class MicrometeoriteFindMapper {
     public MicrometeoriteFind entityToModel(MicrometeoriteFindEntity entity) {
         MicrometeoriteFind model = new MicrometeoriteFind();
         List<Image> images = new ArrayList<>();
-        Image image = new Image();
-        image.setPicture(entity.getImages().get(0).getMicrometeoriteImage().toString());
-        images.add(image);
+        model.setMicrometeoriteDiameter(entity.getDiameter());
+        model.setMicrometeoriteChemicalComposition(entity.getChemicalComposition());
+        model.setMicrometeoriteFindComment(entity.getComment());
+        model.setMicrometeoriteFindDate(entity.getFindDate());
+        model.setMicrometeoriteFindId(BigDecimal.valueOf(entity.getId()));
+        model.setMicrometeoriteFindPlace(entity.getFindPlace());
+        model.setMicrometeoriteFindPlaceDescription(entity.getPlaceDescription());
+        model.setMicrometeoriteFindCoordinates(convertDegreeAngleToDouble(entity.getGpsDegree(),entity.getGpsMinute(),entity.getGpsSecound()));
+        model.setMicrometeoriteWeight(entity.getWeight());
+
+        model.setMicrometeoriteFindFinder(personMapper.entityToModel(entity.getFinder()));
+        model.setMicrometeoriteFindRecorder(personMapper.entityToModel(entity.getRecorder()));
+
+        for (ImageEntity ientity : entity.getImages()){
+            Image image = new Image();
+            image.setPicture(Arrays.toString(ientity.getMicrometeoriteImage()));
+            image.setImageId(BigDecimal.valueOf(ientity.getId()));
+            image.setCamera(ientity.getCamera());
+            image.setLens(ientity.getLens());
+            image.setMagnification(ientity.getMagnification());
+            image.setPhotographer(personMapper.entityToModel(ientity.getPhotographer()));
+            image.setPhotographyDate(ientity.getPhotographyDate());
+            image.setRecordingInstrument(ientity.getRecordingInstrument());
+            images.add(image);
+        }
         model.setImages(images);
+
         return model;
     }
 

@@ -29,6 +29,16 @@ public class PersonMapper {
 
     public Person entityToModel(PersonEntity entity) {
         Person model = new Person();
+        model.setBirthday(entity.getBirthday());
+        model.setCountry(entity.getCountry());
+        model.setEmail(entity.getEmail());
+        model.setFirstname(entity.getFirstname());
+        model.setName(entity.getName());
+        model.setPhonenumber(entity.getPhonenumber());
+        model.setLocation(entity.getLocation());
+        model.setStreet(entity.getStreet());
+        model.setZipcode(entity.getZipcode());
+        model.setWebsite(entity.getWebsite());
         return model;
     }
 

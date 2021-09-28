@@ -1,11 +1,17 @@
 package de.restoba.terminverwaltungservice.entity;
 
-import lombok.Data;
+import lombok.*;
+import org.hibernate.Hibernate;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
-@Data
+@Getter
+@Setter
+@ToString
+@RequiredArgsConstructor
 @Entity
 @Table(name = "image")
 public class ImageEntity {
@@ -17,6 +23,7 @@ public class ImageEntity {
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "fk_referenzperson_id")
+    @ToString.Exclude
     private PersonEntity photographer;
     private String recordingInstrument;
     private String magnification;
@@ -25,6 +32,7 @@ public class ImageEntity {
 
     @Lob
     @Column(name = "MICROMETEORITE_IMAGE")
+    @Type(type = "org.hibernate.type.ImageType")
     private byte[] MicrometeoriteImage;
 
     public Integer getId() {
@@ -89,5 +97,18 @@ public class ImageEntity {
 
     public void setMicrometeoriteImage(byte[] micrometeoriteImage) {
         MicrometeoriteImage = micrometeoriteImage;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
+        ImageEntity that = (ImageEntity) o;
+        return Objects.equals(id, that.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return 0;
     }
 }

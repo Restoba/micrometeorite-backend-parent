@@ -63,14 +63,17 @@
             <version>19.0</version>
         </dependency>
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-        </dependency>
-        <dependency>
             <groupId>de.restoba</groupId>
             <artifactId>micrometeorite-openapi-model</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.24</version>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>

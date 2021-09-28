@@ -33,6 +33,7 @@ public class MicrometeoriteFindService {
     public List<PredictionResult> addMicrometeoriteFind(MicrometeoriteFind body) {
         MicrometeoriteFindEntity entity = mapper.modelToEntity(body);
         repo.save(entity);
-        return scriptService.predictImagesThroughNNModel(entity.getImages());
+        //return scriptService.predictImagesThroughNNModel(entity.getImages());
+        return null;
     }
 }

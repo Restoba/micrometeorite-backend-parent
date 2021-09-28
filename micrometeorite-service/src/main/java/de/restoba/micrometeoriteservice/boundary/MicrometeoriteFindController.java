@@ -22,7 +22,7 @@ import java.util.Optional;
 @RestController
 @AllArgsConstructor
 @CrossOrigin(origins = "${client.url}")
-@Api(tags = "Vaccinecapacity")
+@Api(tags = "micrometeoriteFind")
 public class MicrometeoriteFindController implements MicrometeoriteFindApi {
 
     @Autowired

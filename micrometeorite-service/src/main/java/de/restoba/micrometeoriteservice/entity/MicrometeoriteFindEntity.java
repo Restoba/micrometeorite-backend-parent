@@ -56,7 +56,6 @@ public class MicrometeoriteFindEntity {
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinColumn(name = "fk_image_id")
-    @ToString.Exclude
     private List<ImageEntity> images;
 
     public Integer getId() {

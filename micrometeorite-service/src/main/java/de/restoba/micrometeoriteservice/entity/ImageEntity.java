@@ -31,9 +31,9 @@ public class ImageEntity {
     private String lens;
 
     @Lob
-    @Column(name = "MICROMETEORITE_IMAGE")
-    @Type(type = "org.hibernate.type.ImageType")
-    private byte[] MicrometeoriteImage;
+    @Type(type = "org.hibernate.type.BinaryType")
+    @Column(name = "MICROMETEORITEIMAGE")
+    private byte[] micrometeoriteImage;
 
     public Integer getId() {
         return id;
@@ -92,11 +92,11 @@ public class ImageEntity {
     }
 
     public byte[] getMicrometeoriteImage() {
-        return MicrometeoriteImage;
+        return micrometeoriteImage;
     }
 
     public void setMicrometeoriteImage(byte[] micrometeoriteImage) {
-        MicrometeoriteImage = micrometeoriteImage;
+        this.micrometeoriteImage = micrometeoriteImage;
     }
 
     @Override

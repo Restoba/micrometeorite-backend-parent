@@ -88,7 +88,7 @@ public class MicrometeoriteFindMapper {
 
         for (ImageEntity ientity : entity.getImages()){
             Image image = new Image();
-            image.setPicture(Arrays.toString(ientity.getMicrometeoriteImage()));
+            image.setPicture(new String(ientity.getMicrometeoriteImage()));
             image.setImageId(BigDecimal.valueOf(ientity.getId()));
             image.setCamera(ientity.getCamera());
             image.setLens(ientity.getLens());

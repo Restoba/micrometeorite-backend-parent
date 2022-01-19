@@ -134,6 +134,11 @@ definitions:
         type: "string"
       lens:
         type: "string"
+      micrometeoritePredictionModelName:
+        type: "string"
+      micrometeoritePrediction:
+        type: "number"
+        format: "int"
       picture: # <-- image embedded into JSON
         type: "string"
         format: "byte"
@@ -168,6 +173,17 @@ definitions:
     type: "object"
     properties:
       micrometeoriteFindId:
+        type: "number"
+        format: "int"
+      imagesResults: # <-- image embedded into JSON
+        type: "array"
+        items:
+          $ref: "#/definitions/imageResult"
+
+  imageResult:
+    type: "object"
+    properties:
+      imageId:
         type: "number"
         format: "int"
       micrometeoritePredictionModelName:

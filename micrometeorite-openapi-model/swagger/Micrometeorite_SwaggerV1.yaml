@@ -56,6 +56,27 @@ paths:
             items:
               $ref: "#/definitions/micrometeoriteFind"
 
+  /pet/{petId}:
+    delete:
+      tags:
+        - "pet"
+      summary: "Deletes a MicrometeoriteFind"
+      description: ""
+      operationId: "deleteMicrometeoriteFind"
+      produces:
+        - "application/json"
+      parameters:
+        - name: micrometeoriteFindId
+          in: "path"
+          description: "micrometeoriteFindId id to delete"
+          required: true
+          type: "integer"
+      responses:
+        "400":
+          description: "Invalid ID supplied"
+        "404":
+          description: "MicrometeoriteFind not found"
+
 definitions:
   micrometeoriteFind:
     type: "object"

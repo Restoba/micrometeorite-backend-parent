@@ -56,10 +56,10 @@ paths:
             items:
               $ref: "#/definitions/micrometeoriteFind"
 
-  /pet/{petId}:
+  /micrometeoriteFind/{micrometeoriteFindId}:
     delete:
       tags:
-        - "pet"
+        - "micrometeoriteFind"
       summary: "Deletes a MicrometeoriteFind"
       description: ""
       operationId: "deleteMicrometeoriteFind"

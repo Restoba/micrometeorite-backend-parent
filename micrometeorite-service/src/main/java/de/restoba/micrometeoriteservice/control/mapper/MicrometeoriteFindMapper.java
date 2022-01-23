@@ -13,7 +13,6 @@ import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -100,6 +99,12 @@ public class MicrometeoriteFindMapper {
             image.setPhotographer(personMapper.entityToModel(ientity.getPhotographer()));
             image.setPhotographyDate(ientity.getPhotographyDate());
             image.setRecordingInstrument(ientity.getRecordingInstrument());
+            if (ientity.getPredictionModel() != null){
+                image.setMicrometeoritePredictionModelName(ientity.getPredictionModel());
+            }
+            if (ientity.getPredictionResult() != null){
+                image.setMicrometeoritePrediction(BigDecimal.valueOf(ientity.getPredictionResult()));
+            }
             images.add(image);
         }
         model.setImages(images);

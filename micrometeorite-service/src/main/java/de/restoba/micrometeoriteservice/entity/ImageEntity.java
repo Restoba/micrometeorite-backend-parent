@@ -29,6 +29,8 @@ public class ImageEntity {
     private String magnification;
     private String camera;
     private String lens;
+    private Integer predictionResult;
+    private String predictionModel;
 
     @Lob
     @Type(type = "org.hibernate.type.BinaryType")
@@ -97,6 +99,22 @@ public class ImageEntity {
 
     public void setMicrometeoriteImage(byte[] micrometeoriteImage) {
         this.micrometeoriteImage = micrometeoriteImage;
+    }
+
+    public Integer getPredictionResult() {
+        return predictionResult;
+    }
+
+    public void setPredictionResult(Integer predictionResult) {
+        this.predictionResult = predictionResult;
+    }
+
+    public String getPredictionModel() {
+        return predictionModel;
+    }
+
+    public void setPredictionModel(String predictionModel) {
+        this.predictionModel = predictionModel;
     }
 
     @Override

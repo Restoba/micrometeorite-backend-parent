@@ -51,14 +51,16 @@ public class MicrometeoriteFindMapper {
         personRepo.save(entity.getRecorder());
         entity.setCreationDate(LocalDateTime.now());
         // Umwandlung coord in Degree Secounds und Minutes
-        int sec = (int)Math.round(model.getMicrometeoriteFindCoordinates() * 3600);
-        int deg = sec / 3600;
-        sec = Math.abs(sec % 3600);
-        int min = sec / 60;
-        sec %= 60;
-        entity.setGpsDegree(deg);
-        entity.setGpsSecound(sec);
-        entity.setGpsMinute(min);
+        if (model.getMicrometeoriteFindCoordinates() != null){
+            int sec = (int)Math.round(model.getMicrometeoriteFindCoordinates() * 3600);
+            int deg = sec / 3600;
+            sec = Math.abs(sec % 3600);
+            int min = sec / 60;
+            sec %= 60;
+            entity.setGpsDegree(deg);
+            entity.setGpsSecound(sec);
+            entity.setGpsMinute(min);
+        }
         entity.setFindPlace(model.getMicrometeoriteFindPlace());
         entity.setPlaceDescription(model.getMicrometeoriteFindPlaceDescription());
         entity.setChemicalComposition(model.getMicrometeoriteChemicalComposition());

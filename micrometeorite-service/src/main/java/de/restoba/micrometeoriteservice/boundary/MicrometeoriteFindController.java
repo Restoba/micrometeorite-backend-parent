@@ -47,7 +47,10 @@ public class MicrometeoriteFindController implements MicrometeoriteFindApi {
 
     @Override
     public ResponseEntity<Void> deleteMicrometeoriteFind(Integer micrometeoriteFindId) {
-        return null;
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        service.deleteMicrometeoriteFind(micrometeoriteFindId);
+        return new ResponseEntity<>(headers, HttpStatus.OK);
     }
 
     @Override

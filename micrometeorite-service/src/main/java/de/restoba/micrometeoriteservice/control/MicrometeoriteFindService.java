@@ -35,7 +35,6 @@ public class MicrometeoriteFindService {
 
     public List<PredictionResult> addMicrometeoriteFind(MicrometeoriteFind body) {
         MicrometeoriteFindEntity entity = mapper.modelToEntity(body);
-        repo.save(entity);
         List<PredictionResult> predictionResults = new ArrayList<>();
         List<ImageResult> imageResultList = new ArrayList<>();
         PredictionResult predictionResult = new PredictionResult();
@@ -52,6 +51,7 @@ public class MicrometeoriteFindService {
         }
         predictionResult.setImagesResults(imageResultList);
         predictionResults.add(predictionResult);
+        repo.save(entity);
         return predictionResults;
     }
 }

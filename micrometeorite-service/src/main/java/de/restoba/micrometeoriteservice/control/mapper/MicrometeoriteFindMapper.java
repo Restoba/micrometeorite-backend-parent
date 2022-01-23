@@ -82,7 +82,9 @@ public class MicrometeoriteFindMapper {
         model.setMicrometeoriteFindId(BigDecimal.valueOf(entity.getId()));
         model.setMicrometeoriteFindPlace(entity.getFindPlace());
         model.setMicrometeoriteFindPlaceDescription(entity.getPlaceDescription());
-        model.setMicrometeoriteFindCoordinates(convertDegreeAngleToDouble(entity.getGpsDegree(),entity.getGpsMinute(),entity.getGpsSecound()));
+        if (!(entity.getGpsDegree() == null || entity.getGpsMinute() == null || entity.getGpsSecound() == null)){
+            model.setMicrometeoriteFindCoordinates(convertDegreeAngleToDouble(entity.getGpsDegree(),entity.getGpsMinute(),entity.getGpsSecound()));
+        }
         model.setMicrometeoriteWeight(entity.getWeight());
 
         model.setMicrometeoriteFindFinder(personMapper.entityToModel(entity.getFinder()));

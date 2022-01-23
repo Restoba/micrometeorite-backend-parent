@@ -1,6 +1,7 @@
 package de.restoba.micrometeoriteservice.control;
 
 import de.restoba.micrometeoritemodel.generated.rest.model.Image;
+import de.restoba.micrometeoritemodel.generated.rest.model.ImageResult;
 import de.restoba.micrometeoritemodel.generated.rest.model.MicrometeoriteFind;
 import de.restoba.micrometeoritemodel.generated.rest.model.PredictionResult;
 import de.restoba.micrometeoriteservice.control.mapper.MicrometeoriteFindMapper;
@@ -36,13 +37,21 @@ public class MicrometeoriteFindService {
         MicrometeoriteFindEntity entity = mapper.modelToEntity(body);
         repo.save(entity);
         List<PredictionResult> predictionResults = new ArrayList<>();
+        List<ImageResult> imageResultList = new ArrayList<>();
+        PredictionResult predictionResult = new PredictionResult();
+        predictionResult.setMicrometeoriteFindId(BigDecimal.valueOf(entity.getId()));
         for(ImageEntity ientity : entity.getImages()){
-            PredictionResult predictionResult = new PredictionResult();
-            predictionResult.setMicrometeoriteFindId(BigDecimal.valueOf(entity.getId()));
-            predictionResults.add(predictionResult);
+            ImageResult imageResult = new ImageResult();
+            imageResult.setImageId(BigDecimal.valueOf(ientity.getId()));
+            imageResult.setMicrometeoritePredictionModelName("ModelA");
+            //Create random number 0 - 99
+            double randNumber = Math.random();
+            double d = randNumber * 100;
+            imageResult.setMicrometeoritePrediction(BigDecimal.valueOf(d));
+            imageResultList.add(imageResult);
         }
-
+        predictionResult.setImagesResults(imageResultList);
+        predictionResults.add(predictionResult);
         return predictionResults;
-        //return null;
     }
 }

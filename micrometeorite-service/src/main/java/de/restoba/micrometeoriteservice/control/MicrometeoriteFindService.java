@@ -1,6 +1,5 @@
 package de.restoba.micrometeoriteservice.control;
 
-import de.restoba.micrometeoritemodel.generated.rest.model.Image;
 import de.restoba.micrometeoritemodel.generated.rest.model.ImageResult;
 import de.restoba.micrometeoritemodel.generated.rest.model.MicrometeoriteFind;
 import de.restoba.micrometeoritemodel.generated.rest.model.PredictionResult;
@@ -50,15 +49,14 @@ public class MicrometeoriteFindService {
         for(ImageEntity ientity : images){
             ImageResult imageResult = new ImageResult();
             imageResult.setImageId(BigDecimal.valueOf(ientity.getId()));
-            imageResult.setMicrometeoritePredictionModelName("ModelA");
-            //Create random number 0 - 99
+            //ientity = MicrometeoriteModelApiService.updatePredictionInEntity(ientity);
             double randNumber = Math.random();
             double d = randNumber * 100;
-            imageResult.setMicrometeoritePrediction(BigDecimal.valueOf((int) d));
-            imageResultList.add(imageResult);
-
             ientity.setPredictionResult((int) d);
-            ientity.setPredictionModel("ModelA");
+            ientity.setPredictionModel("Random");
+            imageResult.setMicrometeoritePrediction(BigDecimal.valueOf(ientity.getPredictionResult()));
+            imageResult.setMicrometeoritePredictionModelName(ientity.getPredictionModel());
+            imageResultList.add(imageResult);
             imageRepo.save(ientity);
         }
         predictionResult.setImagesResults(imageResultList);

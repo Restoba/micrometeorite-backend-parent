@@ -31,6 +31,10 @@ public class MicrometeoriteFindService {
         return mapper.entitiesToModels(new ArrayList<>(repo.findAll()));
     }
 
+    public MicrometeoriteFind getMicrometeoriteFindById(Integer micrometeoriteFind) {
+        return mapper.entityToModel(repo.findById(micrometeoriteFind).get());
+    }
+
     public void deleteMicrometeoriteFind(Integer micrometeoriteFindId) {
         repo.deleteById(micrometeoriteFindId);
     }

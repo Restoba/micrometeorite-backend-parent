@@ -62,7 +62,9 @@ public class MicrometeoriteFindController implements MicrometeoriteFindApi {
 
     @Override
     public ResponseEntity<MicrometeoriteFind> getMicrometeoriteFindById(Integer micrometeoriteFindId) {
-        return null;
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        return new ResponseEntity<>(service.getMicrometeoriteFindById(micrometeoriteFindId), headers, HttpStatus.OK);
     }
 
 }

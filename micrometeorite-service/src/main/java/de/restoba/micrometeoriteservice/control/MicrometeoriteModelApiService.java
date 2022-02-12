@@ -18,7 +18,7 @@ public class MicrometeoriteModelApiService {
         body.add("file", new String(ientity.getMicrometeoriteImage()));
         HttpEntity<Object> requestEntity = new HttpEntity<>(body,headers);
         RestTemplate restTemplate = new RestTemplate();
-        ResponseEntity<String> responseEntity = restTemplate.exchange("http://127.0.0.1:5000/predictionMerkelVoigt", HttpMethod.POST, requestEntity, String.class);
+        ResponseEntity<String> responseEntity = restTemplate.exchange("http://127.0.0.1:5000/micrometeorite-prediction/api/v1/predictionMerkelVoigt", HttpMethod.POST, requestEntity, String.class);
         //ientity.setPredictionResult(prediction);
         JSONObject jsonObject = new JSONObject(responseEntity.getBody());
         double d = jsonObject.getDouble("result") * 100;

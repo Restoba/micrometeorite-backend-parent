@@ -53,11 +53,11 @@ public class MicrometeoriteFindService {
         for(ImageEntity ientity : images){
             ImageResult imageResult = new ImageResult();
             imageResult.setImageId(BigDecimal.valueOf(ientity.getId()));
-            //ientity = MicrometeoriteModelApiService.updatePredictionInEntity(ientity);
-            double randNumber = Math.random();
+            ientity = MicrometeoriteModelApiService.updatePredictionInEntity(ientity);
+/*            double randNumber = Math.random();
             double d = randNumber * 100;
             ientity.setPredictionResult((int) d);
-            ientity.setPredictionModel("Random");
+            ientity.setPredictionModel("Random");*/
             imageResult.setMicrometeoritePrediction(BigDecimal.valueOf(ientity.getPredictionResult()));
             imageResult.setMicrometeoritePredictionModelName(ientity.getPredictionModel());
             imageResultList.add(imageResult);
